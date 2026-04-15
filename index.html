@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="weather-sunny-low-20.svg" alt="">
+        <h1>Weather App</h1>
+      </div>
+      <div>
+        <input type="text" id="cityinput" placeholder="Enter city name" />
+        <button id="getweather">Check</button>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="weatherDisplay">
+        <h2 id="cityName">City Name</h2>
+        <img id="weathericon" src="" alt="Weather icon" />
+        <p id="temp">Temperature: --</p>
+        <p id="desc">Condition: --</p>
+        <p id="realfeel">realfeel</p>
+
+        <div class="windspeed">
+          <p class="windtext">
+            wind-kmph
+            <img src="wind.svg" alt="">
+          </p>
+          <p id="wind">wind</p>
+        </div>
+
+        <div class="windsguests">
+          <p class="windgueststext">wind-guest <img src="wind-onshore-fill.svg" alt=""></p>
+          <p id="windguest">guest</p>
+        </div>
+
+        <div class="aqicontainer">
+          <p id="airq">air-quilty <img src="smoke-mask-svgrepo-com.svg" alt=""></p>
+          <p class="aqiCard" id="aqiText">aqitext</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="hourlychange">
+      <div class="hourlysections">
+
+        </div>
+
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

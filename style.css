@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(130, 211, 211);
+  gap: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  color: whitesmoke;
+}
+
+#getweather {
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+#getweather:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+  background-color: rgb(53, 190, 231);
+  width: 100%;
+  height: 65vh;
+  color: white;
+  /* height: 400px; */
+}
+
+#weathericon {
+  height: 70px;
+  /* margin: 5px 0px; */
+  padding: 3px;
+}
+
+#cityinput {
+  position: relative;
+  width: 340px;
+
+  padding: 10px 33px;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+button {
+  background-color: blue;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+#weatherDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  margin: 20px;
+  width:60vw;
+  /* height: 50vh; */
+}
+
+#cityName {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  margin: 5px 0px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#temp {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 2px;
+}
+
+.windspeed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 30px;
+  border-bottom: 1px solid white;
+  /* gap: 10px; */
+}
+
+.windtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  margin: 2px;
+}
+
+#wind {
+  margin: 2px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+
+.windsguests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 30px;
+  border-bottom: 1px solid white;
+}
+
+.windgueststext,
+#windguest {
+  margin: 2px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+
+.windgueststext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#airq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#windguest {
+  margin: 2px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+
+.aqicontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 10px; */
+  /* margin: 1px; */
+  width: 400px;
+  height: 30px;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+
+#airq,
+#aqiText {
+  margin: 2px;
+  /* font-size: 30px; */
+}
+
+.hourlychange {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: rgb(53, 190, 231);
+  height: 65vh;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.hourlysections {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+  width: 90%;
+  height: 90%;
+  margin: 5px;
+  overflow-x: auto;
+}
+
+.hourly {
+  height: 50vh;
+}
+
+.hour-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+  border-right: 1px solid white;
+}
+
+.rain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+
+.rain * {
+  margin: 3px;
+}
+
+.humi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-weight: bold;
+  width: 76%;
+  border-bottom: 1px solid white;
+  font-family: "Nunito", sans-serif;
+}
+
+.humi * {
+  margin: 3px;
+}
